@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap');
+/* r&b */
+.rAndb h1, .rAndb  h2, .rAndb  h3{
+    font-family: 'Charm', sans-serif;
+    color: rgb(206, 197, 108);
+}
+.rAndb h4, .rAndb p{
+    font-family: 'Noto Serif TC', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.rAndb h4{
+    font-size: 20px;
+}
+html .rAndb{
+    height: 0;
+    overflow-x: hidden;
+    background-color: rgb(40, 42, 62);
+    box-sizing: border-box;
+}
+body.rAndb{
+    margin: 0;
+}
+/* @media(max-width:1200){
+    .rAndb img{
+        max-width: 80%;
+        height: auto;
+    }
+} */
+.rAndb .outerWrap{
+    position: absolute;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.rAndb .innerWrap{
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: row;
+    width: 2200vw;
+    height: 100vh;
+    position: relative;
+}
+.rAndb .contain{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+.rAndb .title{
+    position: absolute;
+    bottom: 460px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rAndb .enterDoor{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    text-align: center;
+}
+.rAndb .enterDoor h4{
+    margin-top: 100px;
+    color: rgb(122, 122, 122);
+}
+.rAndb .enterDoor a{
+    text-decoration-line: none;
+}
+.rAndb .stampStop{
+    position: absolute;
+    bottom: -3px;
+    left: 420px;
+    cursor: pointer;
+    text-align: center;
+}
+.rAndb .stampStop h4{
+    color: rgb(206, 197, 108);
+}
+
+/* intro */
+.rAndb .text{
+    margin-top: 180px;
+    margin-left: 50px;
+}
+.rAndb .introImage{
+    margin-top: 150px;
+}
+.rAndb .arrow{
+    position: absolute;
+    bottom: -15px;
+    right: 50px
+}
+
+/* content */
+/* profile */
+.rAndb .profileImageBox{
+    position: relative;
+    text-align: center;
+}
+.rAndb .light{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.rAndb .profileImageBox .profile{
+    margin-top: 45%;
+    position: relative;
+}
+.rAndb .profileImage{
+    box-shadow: 3px 3px 6px rgba(31, 31, 31, 0.733);
+}
+.rAndb .lightOffImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.rAndb .profileFrame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rAndb h3.singerName{
+    font-family: 'Noto Serif TC', sans-serif;
+    font-weight: 600;
+}
+.rAndb .singerBox .text, .albumBox .text{
+    margin-top: 200px;
+    margin-left: 0px;
+}
+.rAndb .singerBox .text p, .albumBox .text p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+/* album */
+.rAndb .contain.albumBox{
+    width: 150vw;
+}
+.rAndb .hightlights{
+    position: absolute;
+    top: 100px;
+}
+.rAndb .albumImageBox{
+    position: relative;
+    margin-left: 70px;
+    /* border: 1px solid rgb(248, 245, 31); */
+}
+.rAndb .albumImageBox .albumImage{
+    margin-top: 220px;
+    box-shadow: 3px 3px 6px rgba(31, 31, 31, 0.733);
+}
+.rAndb .albumImageBox .headphone{
+    /* padding-top: -50px; */
+    display: block;
+    cursor: pointer;
+}
+/* mv room */
+.rAndb .mvRoomBox{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.rAndb .mvRoom{
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+}
+.rAndb .mvRoom .leftDoor{
+    width: 144px;
+    height: 425px;
+    /* z-index: -10; */
+    background-color: black;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+.rAndb .mvRoom:hover .leftDoor{
+    border-radius: 0px 0px 150px 0px;
+}
+.rAndb .mvRoom .rightDoor{
+    width: 144px;
+    height: 425px;
+    /* z-index: -10; */
+    background-color: black;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+.rAndb .mvRoom:hover .rightDoor{
+    border-radius: 0px 0px 0px 150px;
+}
+.rAndb .mvRoom img{
+    position: absolute;
+    bottom: 0;
+}
+
+/* end photo */
+.rAndb .profileImageBox .endPhoto{
+    margin-top: 30%;
+    position: relative;
+}
+/* myMusic */
+.rAndb .myMusic img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.rAndb .myMusic .musicBox{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    height: 70px;
+    padding-left: 45px;
+    padding-right: 30px;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(31, 31, 31, 0.733);
+    display: flex;
+    font-family: 'Noto Serif TC', sans-serif;
+    transform: translateX(150%);
+    transition: all 0.5s ease-out;
+}
+.rAndb .myMusic .musicBox .musicName{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.rAndb .myMusic .musicBox .singer{
+    margin-top: 24px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+.rAndb .myMusic .musicBox audio{
+    margin-top: 10px;
+    margin-left: 30px;
+    background-color: white;
+}
+.rAndb audio::-webkit-media-controls-panel {
+    background-color: white;
+}
+.rAndb .musicBoxHide{
+    margin-top: 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.rAndb .border{
+    border:1px solid rgb(40, 42, 62);
+}
+
+/* menu */
+.rAndb .menu{
+    position: fixed;
+    top: 90vh;
+    left: 20px;
+    display: flex;
+    align-items: baseline;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.rAndb .menu .item{
+    margin-left: 30px;
+}
+.rAndb .menu .item a{
+    text-decoration-line: none;
+    font-family: 'Noto Serif TC', sans-serif;
+    color: rgb(206, 197, 108);
+}
+.rAndb .menu .item a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: rgb(206, 197, 108);
+    transition: all 0.5s;
+}
+.rAndb .menu .item a:hover::after{
+    width: 100%;
+}
+.rAndb .menu img{
+    cursor: pointer;
+}
+
+/* my stamp card*/
+.rAndb #myStampCard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.rAndb .stampCardBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: end;
+
+}
+.rAndb #myStampCard .close{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Noto Serif TC', sans-serif;
+    cursor: pointer;
+}
+.rAndb #myStampCard .complete{
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(206, 197, 108);
+    font-family: 'Noto Serif TC', sans-serif;
+    display: none;
+    z-index: 5;
+}
+.rAndb .stampPlace{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:75%;
+    height: 45%;
+    border:1px dashed grey;
+}
+.rAndb .stampStyle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.rAndb #myStampAlert{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    font-family: 'Noto Serif TC', sans-serif;
+    transform: translateX(-50%);
+}
+
+/* mvRoom */
+.rAndb #mv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: none;
+    transition: all 0.5s;
+}
+.rAndb .blackBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.rAndb #mv iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
